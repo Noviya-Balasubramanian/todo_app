@@ -9,7 +9,12 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 <body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<%= link_to "Sign up", new_user_registration_path, :style=> 'color:#FFFFFF;', :class => 'css_class'%>
+<%= link_to "Sign in", new_user_session_path, :style=> 'color:#FFFFFF;', :class => 'css_class' %>
 <div class="container">
+
     <%= yield %>
    </div>
     
